@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Card Selector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div class="card-buttons">
+  <button class="card-button" id="1">1 The Fool</button>
+  <button class="card-button" id="2">2 The Magician</button>
+  <button class="card-button" id="3">3 The High Priestess</button>
+  <button class="card-button" id="4">4 The Empress</button>
+  <button class="card-button" id="5">5 The Emperor</button>
+  <button class="card-button" id="6">6 The Hierophant</button>
+  <button class="card-button" id="7">7 The Lovers</button>
+  <button class="card-button" id="8">8 The Chariot</button>
+  <button class="card-button" id="9">9 The Hermit</button>
+  <button class="card-button" id="10">10 Wheel of Fortune</button>
+  <button class="card-button" id="11">11 Strength</button>
+  <button class="card-button" id="12">12 The Hanged Man</button>
+  <button class="card-button" id="13">13 Death</button>
+  <button class="card-button" id="14">14 Temperance</button>
+  <button class="card-button" id="15">15 The Devil</button>
+  <button class="card-button" id="16">16 The Tower</button>
+  <button class="card-button" id="17">17 The Star</button>
+  <button class="card-button" id="18">18 The Moon</button>
+  <button class="card-button" id="19">19 The Sun</button>
+  <button class="card-button" id="20">20 Judgment</button>
+  <button class="card-button" id="21">21 The World</button>
+  <button class="card-button" id="22">Ace of Wands</button>
+  <button class="card-button" id="23">2 of Wands</button>
+  <button class="card-button" id="24">3 of Wands</button>
+  <button class="card-button" id="25">4 of Wands</button>
+  <button class="card-button" id="26">5 of Wands</button>
+  <button class="card-button" id="27">6 of Wands</button>
+  <button class="card-button" id="28">7 of Wands</button>
+  <button class="card-button" id="29">8 of Wands</button>
+  <button class="card-button" id="30">9 of Wands</button>
+  <button class="card-button" id="31">10 of Wands</button>
+  <button class="card-button" id="32">Page of Wands</button>
+  <button class="card-button" id="33">Knight of Wands</button>
+  <button class="card-button" id="34">Queen of Wands</button>
+  <button class="card-button" id="35">King of Wands</button>
+  <button class="card-button" id="36">Ace of Cups</button>
+  <button class="card-button" id="37">2 of Cups</button>
+  <button class="card-button" id="38">3 of Cups</button>
+  <button class="card-button" id="39">4 of Cups</button>
+  <button class="card-button" id="40">5 of Cups</button>
+  <button class="card-button" id="41">6 of Cups</button>
+  <button class="card-button" id="42">7 of Cups</button>
+  <button class="card-button" id="43">8 of Cups</button>
+  <button class="card-button" id="44">9 of Cups</button>
+  <button class="card-button" id="45">10 of Cups</button>
+  <button class="card-button" id="46">Page of Cups</button>
+  <button class="card-button" id="47">Knight of Cups</button>
+  <button class="card-button" id="48">Queen of Cups</button>
+  <button class="card-button" id="49">King of Cups</button>
+  <button class="card-button" id="50">Ace of Swords</button>
+  <button class="card-button" id="51">2 of Swords</button>
+  <button class="card-button" id="52">3 of Swords</button>
+  <button class="card-button" id="53">4 of Swords</button>
+  <button class="card-button" id="54">5 of Swords</button>
+  <button class="card-button" id="55">6 of Swords</button>
+  <button class="card-button" id="56">7 of Swords</button>
+  <button class="card-button" id="57">8 of Swords</button>
+  <button class="card-button" id="58">9 of Swords</button>
+  <button class="card-button" id="59">10 of Swords</button>
+  <button class="card-button" id="60">Page of Swords</button>
+  <button class="card-button" id="61">Knight of Swords</button>
+  <button class="card-button" id="62">Queen of Swords</button>
+  <button class="card-button" id="63">King of Swords</button>
+  <button class="card-button" id="64">Ace of Pentacles</button>
+  <button class="card-button" id="65">2 of Pentacles</button>
+  <button class="card-button" id="66">3 of Pentacles</button>
+  <button class="card-button" id="67">4 of Pentacles</button>
+  <button class="card-button" id="68">5 of Pentacles</button>
+  <button class="card-button" id="69">6 of Pentacles</button>
+  <button class="card-button" id="70">7 of Pentacles</button>
+  <button class="card-button" id="71">8 of Pentacles</button>
+  <button class="card-button" id="72">9 of Pentacles</button>
+  <button class="card-button" id="73">10 of Pentacles</button>
+  <button class="card-button" id="74">Page of Pentacles</button>
+  <button class="card-button" id="75">Knight of Pentacles</button>
+  <button class="card-button" id="76">Queen of Pentacles</button>
+  <button class="card-button" id="77">King of Pentacles</button>
+  <button class="card-button" id="78">78 The World</button>
+</div>
+
+<script>
+  const cardButtons = document.querySelectorAll('.card-button');
+
+  cardButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const cardNumber = button.id;
+      // Use the cardNumber as needed (e.g., send it as input somewhere else)
+      console.log('Selected card number:', cardNumber);
+    });
+  });
+</script>
+</body>
+</html>
